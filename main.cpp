@@ -22,7 +22,7 @@ int main()//fungsi utama
     //Deklarasi Variable
     int bilangan1, bilangan2, pilihan, hasil;//deklarasi variable bilangan1, bilangan2, pilihan dan hasil dengan tipe data nya integer
     bool pilihanValid = false;//deklarasi variable pilihanValid yang di beri nilai false dengan tipe data nya yaitu boolean
-    string pilihanText, pilihanOperator;//delkarasi variable pilihanText dan pilihanOperator dengan tipe data string
+    string pilihanText, pilihanOperator;//deklarasi variable pilihanText dan pilihanOperator dengan tipe data string
     string messageErrorInputBilangan = "Input harus berupa bilangan. Silahkan coba kembali";//deklarasi variable messageErrorInputBilangan dengan tipe data string
 
     while(true) {//melakukan proses loop
@@ -42,6 +42,7 @@ int main()//fungsi utama
     while(true) {//melakukan proses loop
         cout << "Masukkan Bilangan 2 : ";//menampilkan text Masukkan Bilangan 2
         cin >> bilangan2;//mengassign / set / menyimpan data yang diinputkan ke variable bilangan2
+        
         if(cin.fail()) {//mengecek apakah nilai yang diinput sesuai dengan variable yang telah didefinisikan sebelumnya
             cin.clear();// Menghapus status kesalahan input
             cin.ignore(numeric_limits<streamsize>::max(), '\n');// Membersihkan buffer / input yang telah dimasukkan sebelumnya
